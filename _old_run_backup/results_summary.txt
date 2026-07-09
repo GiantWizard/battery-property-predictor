@@ -1,0 +1,16 @@
+n_start_molecules=7000
+n_after_extraction=5699
+n_after_featurization=5699
+n_after_iqr_and_split=5518
+n_train=3281
+n_val=580
+n_test=1656
+r2=0.8115
+mae_eV=0.2251
+rmse_eV=0.3018
+mape=0.0241
+optuna_trials=15
+tune_time_s=167.2
+final_fit_time_s=14.2
+total_script_time_s=185.1
+best_params={'iterations': 858, 'learning_rate': 0.066667750532935, 'depth': 6, 'l2_leaf_reg': 0.24629767834543584, 'rsm': 0.8379230861326185}
