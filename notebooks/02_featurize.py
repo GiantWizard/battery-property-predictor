@@ -1,9 +1,4 @@
-# Step 2: feature engineering, reused from chemical-property-predictor
-# (https://github.com/GiantWizard/chemical-property-predictor, cells 5-6).
-#
-# Pipeline: RDKit 2D descriptors concatenated with 2048-bit Morgan fingerprints,
-# then VarianceThreshold + StandardScaler. No PCA. Mordred 3D-conformer
-# descriptors are skipped here for speed. See RESULTS.md for the full comparison.
+# feature engineering, reused from chemical-property-predictor (cells 5-6)
 import time
 
 import numpy as np

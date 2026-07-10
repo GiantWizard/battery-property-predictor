@@ -1,8 +1,4 @@
-# Step 3: train and tune a CatBoost regressor on ionization potential (IP).
-# Reuses the chemical-property-predictor training pipeline: VarianceThreshold +
-# StandardScaler, Optuna-tuned CatBoost, 70/15/15 train/val/test split
-# (test_size=0.3, then 0.15 of the remainder held out as validation, same
-# convention as chemical_property_predictor.ipynb cell 12).
+# train/tune CatBoost on ionization potential, reusing chemical-property-predictor's pipeline (cell 12)
 import time
 
 import numpy as np

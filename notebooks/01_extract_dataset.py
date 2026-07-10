@@ -1,11 +1,4 @@
-# Step 1: extract SMILES + ionization potential (IP) from QM9IPEA.json
-# (Weinreich et al. arXiv:2411.00994, Zenodo 10.5281/zenodo.13952172).
-#
-# The raw JSON has geometry and per-charge-state energies but no SMILES, so we
-# recover SMILES from the neutral-molecule geometry with RDKit's bond perceiver.
-# IP = E(cation) - E(neutral) at the neutral geometry, using
-# PNO-LCCSD(T)-F12B for the neutral and PNO-UCCSD(T)-F12B for the cation.
-# See RESULTS.md for details on the dataset and this step's spot-check.
+# extract SMILES + IP from QM9IPEA.json (Weinreich et al., Zenodo 10.5281/zenodo.13952172)
 import json
 import time
 
